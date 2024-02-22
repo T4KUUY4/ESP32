@@ -113,12 +113,8 @@
 
 #define AUXINPUT0_PIN       GPIO_NUM_0 // Mode button on front panel
 #define AUXINPUT1_PIN       GPIO_NUM_16
+#define AUXINPUT2_PIN       AUXINPUT1_PIN
 
-
-// Define user-control CONTROLs (cycle start, reset, feed hold) input pins.
-#if SAFETY_DOOR_ENABLE
-  #define AUXINPUT2_PIN       AUXINPUT1_PIN
-#endif
 
 // Pin mapping when using SPI mode.
 // With this mapping, SD card can be used both in SPI and 1-line SD mode.
